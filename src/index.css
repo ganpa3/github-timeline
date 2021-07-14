@@ -1,0 +1,72 @@
+/* Monkey patching Github's CSS */
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    background-color: #1b1f230d;
+    border-radius: 6px;
+    margin: 0;
+    padding: 2px 4px;
+}
+
+ul {
+    list-style: none;
+}
+
+.inline {
+    display: inline;
+}
+
+#dummy {
+    height: 30px;
+}
+
+.stic {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    width: 375;
+}
+
+a {
+    color: #90caf9;
+    text-decoration: none;
+}
+
+.user-mention {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.width-fit {
+    width: 100%;
+}
+
+.markdown-body {
+    pre {
+        overflow: auto;
+        padding: 16px;
+        border-radius: 6px;
+        background-color: #f6f8fa;
+
+        code {
+            background-color: transparent;
+        }
+    }
+}
+
+blockquote {
+    padding: 0 1em;
+    margin: 0;
+    color: #6a737d;
+    border-left: 0.25em solid #e0e3e6;
+}
+
+.zeroclipboard-container {
+    display: none;
+}
