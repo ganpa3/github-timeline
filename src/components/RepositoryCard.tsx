@@ -1,6 +1,6 @@
-import { Card, CardActions, CardContent, CardHeader, Link, Typography } from "@material-ui/core";
-import { Theme } from "@material-ui/core/styles";
-import { makeStyles } from "@material-ui/styles";
+import { Card, CardActions, CardContent, CardHeader, Link, Typography } from "@mui/material";
+import { Theme } from "@mui/material/styles";
+import { makeStyles } from "@mui/styles";
 
 import { LawIcon, LinkIcon, RepoForkedIcon, StarIcon } from "@primer/octicons-react";
 
@@ -48,8 +48,8 @@ export const useStyles = makeStyles((theme: Theme) => ({
     },
     overflow: {
         overflow: "hidden",
-        textOverflow: "ellipsis"
-    }
+        textOverflow: "ellipsis",
+    },
 }));
 
 const RepositoryCard: React.FC<any> = (repository) => {

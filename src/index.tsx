@@ -1,7 +1,7 @@
-import { createTheme, ThemeProvider } from "@material-ui/core/styles";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-import { CssBaseline } from "@material-ui/core";
-import { pink } from "@material-ui/core/colors";
+import { CssBaseline } from "@mui/material";
+import { pink } from "@mui/material/colors";
 
 const darkTheme = createTheme({
     palette: {

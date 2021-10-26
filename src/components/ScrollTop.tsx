@@ -1,7 +1,7 @@
-import { Fab, useScrollTrigger, Zoom } from "@material-ui/core";
-import { Theme } from "@material-ui/core/styles";
-import { makeStyles } from "@material-ui/styles";
-import ExpandLessIcon from "@material-ui/icons/ExpandLess";
+import { Fab, useScrollTrigger, Zoom } from "@mui/material";
+import { Theme } from "@mui/material/styles";
+import { makeStyles } from "@mui/styles";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 
 import React, { useCallback } from "react";
 

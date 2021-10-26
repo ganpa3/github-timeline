@@ -1,7 +1,7 @@
-import { Alert, Grid, IconButton, Snackbar } from "@material-ui/core";
-import { Theme } from "@material-ui/core/styles";
-import CloseIcon from "@material-ui/icons/Close";
-import { makeStyles } from "@material-ui/styles";
+import { Alert, Grid, IconButton, Snackbar } from "@mui/material";
+import { Theme } from "@mui/material/styles";
+import CloseIcon from "@mui/icons-material/Close";
+import { makeStyles } from "@mui/styles";
 
 import React, { useState } from "react";
 import { Route, Switch, useLocation } from "react-router-dom";

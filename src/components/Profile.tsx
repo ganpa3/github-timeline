@@ -10,12 +10,12 @@ import {
     ListItemText,
     Typography,
     useMediaQuery,
-} from "@material-ui/core";
-import { Theme, useTheme } from "@material-ui/core/styles";
-import LanguageIcon from "@material-ui/icons/Language";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import { makeStyles } from "@material-ui/styles";
+} from "@mui/material";
+import { Theme, useTheme } from "@mui/material/styles";
+import LanguageIcon from "@mui/icons-material/Language";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import { makeStyles } from "@mui/styles";
 
 import React from "react";
 import { useParams } from "react-router-dom";

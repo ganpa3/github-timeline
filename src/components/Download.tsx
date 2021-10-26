@@ -1,7 +1,7 @@
-import { Fab, Tooltip } from "@material-ui/core";
-import { Theme } from "@material-ui/core/styles";
-import GetAppRoundedIcon from "@material-ui/icons/GetAppRounded";
-import { makeStyles } from "@material-ui/styles";
+import { Fab, Tooltip } from "@mui/material";
+import { Theme } from "@mui/material/styles";
+import GetAppRoundedIcon from "@mui/icons-material/GetAppRounded";
+import { makeStyles } from "@mui/styles";
 
 import React, { useCallback } from "react";
 

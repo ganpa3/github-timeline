@@ -17,12 +17,12 @@ import {
     Toolbar,
     Tooltip,
     Typography,
-} from "@material-ui/core";
-import { StyledEngineProvider, Theme } from "@material-ui/core/styles";
-import CloseIcon from "@material-ui/icons/Close";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import SettingsIcon from "@material-ui/icons/Settings";
-import { makeStyles } from "@material-ui/styles";
+} from "@mui/material";
+import { StyledEngineProvider, Theme } from "@mui/material/styles";
+import CloseIcon from "@mui/icons-material/Close";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import SettingsIcon from "@mui/icons-material/Settings";
+import { makeStyles } from "@mui/styles";
 import React, {
     ChangeEvent,
     ChangeEventHandler,

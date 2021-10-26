@@ -1,4 +1,4 @@
-import { CircularProgress, Grid } from "@material-ui/core";
+import { CircularProgress, Grid } from "@mui/material";
 import React from "react";
 
 const Progress: React.FC<{}> = () => {

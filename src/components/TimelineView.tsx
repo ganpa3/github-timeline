@@ -1,6 +1,6 @@
-import { Alert, Grid, List, ListItem } from "@material-ui/core";
-import { Theme } from "@material-ui/core/styles";
-import { makeStyles } from "@material-ui/styles";
+import { Alert, Grid, List, ListItem } from "@mui/material";
+import { Theme } from "@mui/material/styles";
+import { makeStyles } from "@mui/styles";
 
 import React, { useCallback, useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
