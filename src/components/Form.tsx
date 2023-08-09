@@ -104,7 +104,7 @@ const Home: React.FC<{}> = () => {
     const [issueStates, setIssueStates] = useState({
         open: true,
         closed: true,
-        merged: true,
+        merged: false,
     });
 
     const [isInvalidUser, setIsInvalidUser] = useState(false);
