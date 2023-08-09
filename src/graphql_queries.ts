@@ -68,7 +68,7 @@ const ISSUE_QUERY = `
 const PULL_REQUEST_QUERY = `
     query PullRequests(
         $username: String!
-        $sortBy: PullRequestOrderField!
+        $sortBy: IssueOrderField!
         $sortOrder: OrderDirection!
         $endcursor: String
         $states: [PullRequestState!]
