@@ -81,9 +81,17 @@ const Profile: React.FC<ProfileProps> = ({ userType }) => {
 
     const { username } = useParams<URLParams>();
 
-    const { data: user, isLoading } = useQeury(userType, userType, {
+    const { data: user, isLoading, insufficientScope } = useQeury(userType, userType, {
         username,
     });
+
+    if (insufficientScope) {
+        return (
+            <div className={classes.root}>
+                Failed to display Profile due to insufficent scope of your Access token.
+            </div>
+        )
+    }
 
     if (isLoading) {
         // Don't show Profile's loading spinner on smaller widths, because
