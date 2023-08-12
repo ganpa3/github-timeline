@@ -15,6 +15,7 @@ const useQuery = (searchFor: string, userType: string, variables: Variables) => 
     const [error, setError] = useState(false);
     const [githubFailed, setGithubFailed] = useState(false);
     const [userNotFound, setUserNotFound] = useState(false);
+    const [insufficientScope, setInsufficientScope] = useState(false);
 
     const { username, sortBy, sortOrder, pageNumber, states } = variables;
 
@@ -63,7 +64,13 @@ const useQuery = (searchFor: string, userType: string, variables: Variables) => 
                             )
                         ) {
                             setGithubFailed(true);
-                        } else {
+                        }
+                        else if(
+                            result.errors[0].type == "INSUFFICIENT_SCOPES"
+                        ){
+                            setInsufficientScope(true);
+                        }
+                        else {
                             setUserNotFound(true);
                         }
                     } else {
@@ -106,6 +113,7 @@ const useQuery = (searchFor: string, userType: string, variables: Variables) => 
         data,
         error,
         githubFailed,
+        insufficientScope,
         isLoading,
         hasMore: hasMore.current,
         userNotFound,
